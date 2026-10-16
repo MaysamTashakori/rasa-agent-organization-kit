@@ -1,0 +1,44 @@
+{
+  "name": "Rasa Agent Organization Kit",
+  "version": "1.0.1",
+  "kind": "design-blueprint",
+  "executable": false,
+  "daily_model_budget_usd": 0.5,
+  "roles": [
+    "chief",
+    "scout",
+    "analyst",
+    "editor",
+    "curator",
+    "publisher",
+    "assistant"
+  ],
+  "publication": {
+    "requires_owner_approval": true,
+    "exact_revision": true,
+    "uncertain_delivery": "hold-for-reconciliation"
+  },
+  "routines": {
+    "github_search": 1440,
+    "source_sync": 360,
+    "product_drafts": 360,
+    "social_drafts": 1440,
+    "management_report": 1440
+  },
+  "private_settings_required": [
+    "provider_key",
+    "model",
+    "verified_token_prices",
+    "channel_credentials"
+  ],
+  "data_rules": [
+    "Use approved sources",
+    "Keep primary source attribution",
+    "No secrets in prompts",
+    "No invented metrics or testimonials"
+  ],
+  "license": "MIT",
+  "author": "Maysam Tashakori",
+  "publisher": "Rasa Prompt",
+  "repository": "https://github.com/MaysamTashakori/rasa-agent-organization-kit"
+}
